@@ -111,11 +111,7 @@
 let vocabulary = [];
 async function loadWords() {
 
-    const response = await fetch(
-
-        "https://raw.githubusercontent.com/NL13741619-commits/-korean-db/main/words.json"
-
-    );
+    const response = await fetch("words.json");
 
     if (!response.ok) {
 
